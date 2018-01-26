@@ -132,7 +132,6 @@ module.exports = env => {
         const compress = platform !== "android";
         config.plugins.push(new UglifyJsPlugin({
             uglifyOptions: {
-                mangle: { reserved: nsWebpack.uglifyMangleExcludes },
                 compress,
             }
         }));
